@@ -1,0 +1,270 @@
+{
+  "id": "game_review_001",
+  "createdAt": "2023-10-06T14:35:00Z",
+  "messages": [
+    {
+      "id": "1",
+      "speaker": "you",
+      "text": "You’re rolling in it\nThat’s crazy\nAre you going to take it?",
+      "timestamp": null,
+      "isUser": true
+    },
+    {
+      "id": "2",
+      "speaker": "them",
+      "text": "Ya ofc\nI just have to find housing in Irvine 🤷‍♀️",
+      "timestamp": null,
+      "isUser": false
+    },
+    {
+      "id": "3",
+      "speaker": "them",
+      "text": "Ik 🚊😱😱💰💸💰💸💰💸💰🎓",
+      "timestamp": "Tue, Feb 17 at 7:02 PM",
+      "isUser": false
+    },
+    {
+      "id": "4",
+      "speaker": "you",
+      "text": "So nice tho.......\nJob secured",
+      "timestamp": "Tue, Feb 17 at 8:20 PM",
+      "isUser": true
+    },
+    {
+      "id": "5",
+      "speaker": "you",
+      "text": "Tomorrow come to mine at 6 and we can chef up a dinner 👨‍🍳👨‍🍳👨‍🍳",
+      "timestamp": "Tue, Feb 17 at 8:20 PM",
+      "isUser": true
+    },
+    {
+      "id": "6",
+      "speaker": "them",
+      "text": "I’m sorry I’m really busy this week I can’t do dinner tn",
+      "timestamp": "Wednesday 4:37 PM",
+      "isUser": false
+    },
+    {
+      "id": "7",
+      "speaker": "you",
+      "text": "Bummer that’s ok",
+      "timestamp": "Wednesday 6:19 PM",
+      "isUser": true
+    },
+    {
+      "id": "8",
+      "speaker": "you",
+      "text": "Hey if you are free this afternoon we should talk\nIf not then I can’t really until thursday afternoon or friday midday I have a packed week and weekend",
+      "timestamp": "Yesterday 12:23 PM",
+      "isUser": true
+    },
+    {
+      "id": "9",
+      "speaker": "them",
+      "text": "Ya I agree\nWhat time this afternoon",
+      "timestamp": null,
+      "isUser": false
+    }
+  ],
+  "players": {
+    "you": {
+      "name": "you",
+      "accuracy": 90
+    },
+    "them": {
+      "name": "them",
+      "accuracy": 85
+    }
+  },
+  "openingName": "Housing Hunt Gambit",
+  "overallCoachSummary": "A classic opening with the \"Housing Hunt Gambit\" initiating strong dialogue. You made some precise moves by showing empathy and patience. Yet, you slightly overcommitted on scheduling strategies. Them had a solid game but fumbled with the last-minute rejection and scattered responses. Overall, a nicely played exchange with room for fine-tuning the coordination in future meetings!",
+  "evalSeries": [
+    {
+      "moveNumber": 1,
+      "eval": 0.5,
+      "label": "good move"
+    },
+    {
+      "moveNumber": 2,
+      "eval": 0.6,
+      "label": "great move"
+    },
+    {
+      "moveNumber": 3,
+      "eval": 0.4,
+      "label": "excellent move"
+    },
+    {
+      "moveNumber": 4,
+      "eval": 0.5,
+      "label": "good move"
+    },
+    {
+      "moveNumber": 5,
+      "eval": 0.3,
+      "label": "inaccuracy"
+    },
+    {
+      "moveNumber": 6,
+      "eval": 0.1,
+      "label": "mistake"
+    },
+    {
+      "moveNumber": 7,
+      "eval": 0.2,
+      "label": "good move"
+    },
+    {
+      "moveNumber": 8,
+      "eval": 0.3,
+      "label": "excellent move"
+    },
+    {
+      "moveNumber": 9,
+      "eval": 0.4,
+      "label": "great move"
+    }
+  ],
+  "messageReviews": [
+    {
+      "messageId": "1",
+      "moveNumber": 1,
+      "label": "good move",
+      "evalDelta": 0.5,
+      "evalAfter": 0.5,
+      "explanation": "A positive start; showing enthusiasm and curiosity.",
+      "suggestedReply": null
+    },
+    {
+      "messageId": "2",
+      "moveNumber": 2,
+      "label": "great move",
+      "evalDelta": 0.1,
+      "evalAfter": 0.6,
+      "explanation": "Showing determination with a slight hint of realism about housing.",
+      "suggestedReply": null
+    },
+    {
+      "messageId": "3",
+      "moveNumber": 3,
+      "label": "excellent move",
+      "evalDelta": 0.2,
+      "evalAfter": 0.4,
+      "explanation": "Balanced excitement with a touch of stress--good emotional range.",
+      "suggestedReply": null
+    },
+    {
+      "messageId": "4",
+      "moveNumber": 4,
+      "label": "good move",
+      "evalDelta": 0.1,
+      "evalAfter": 0.5,
+      "explanation": "Reaffirming the positive vibes.",
+      "suggestedReply": null
+    },
+    {
+      "messageId": "5",
+      "moveNumber": 5,
+      "label": "inaccuracy",
+      "evalDelta": -0.2,
+      "evalAfter": 0.3,
+      "explanation": "A bit too eager; the invitation is too sudden.",
+      "suggestedReply": "Let me know when you’re free, we can plan something chill."
+    },
+    {
+      "messageId": "6",
+      "moveNumber": 6,
+      "label": "mistake",
+      "evalDelta": -0.2,
+      "evalAfter": 0.1,
+      "explanation": "Caught off guard with schedule conflicts; response lacks alternative.",
+      "suggestedReply": null
+    },
+    {
+      "messageId": "7",
+      "moveNumber": 7,
+      "label": "good move",
+      "evalDelta": 0.1,
+      "evalAfter": 0.2,
+      "explanation": "Good acknowledgment without drama.",
+      "suggestedReply": null
+    },
+    {
+      "messageId": "8",
+      "moveNumber": 8,
+      "label": "excellent move",
+      "evalDelta": 0.1,
+      "evalAfter": 0.3,
+      "explanation": "Well-structured message with clear options, shows flexibility.",
+      "suggestedReply": null
+    },
+    {
+      "messageId": "9",
+      "moveNumber": 9,
+      "label": "great move",
+      "evalDelta": 0.1,
+      "evalAfter": 0.4,
+      "explanation": "Agreement to coordinate; hints at commitment.",
+      "suggestedReply": null
+    }
+  ],
+  "criticalMoments": [
+    {
+      "moveNumber": 5,
+      "messageId": "5",
+      "label": "inaccuracy",
+      "headline": "Sudden Dinner Invite",
+      "explanation": "Inviting them over immediately after securing a job might seem too hasty without checking availability.",
+      "betterLine": "Let me know when you’re free, we can plan something chill."
+    },
+    {
+      "moveNumber": 6,
+      "messageId": "6",
+      "label": "mistake",
+      "headline": "Decline Without Follow-up",
+      "explanation": "Rejecting the dinner without suggesting another time leaves plans unresolved.",
+      "betterLine": "Sorry, too busy this week. Can we set another date?"
+    },
+    {
+      "moveNumber": 8,
+      "messageId": "8",
+      "label": "excellent move",
+      "headline": "Flexible Rescheduling",
+      "explanation": "Offers flexible time slots to reschedule without pressure.",
+      "betterLine": "Hey if you are free this afternoon we should talk, otherwise let's find a time next week."
+    }
+  ],
+  "labelCounts": {
+    "you": {
+      "book move": 0,
+      "good move": 2,
+      "great move": 0,
+      "excellent move": 2,
+      "best move": 0,
+      "brilliant move": 0,
+      "inaccuracy": 1,
+      "mistake": 0,
+      "blunder": 0
+    },
+    "them": {
+      "book move": 0,
+      "good move": 0,
+      "great move": 2,
+      "excellent move": 1,
+      "best move": 0,
+      "brilliant move": 0,
+      "inaccuracy": 0,
+      "mistake": 1,
+      "blunder": 0
+    }
+  },
+  "suggestedReplies": [
+    {
+      "messageId": "5",
+      "moveNumber": 5,
+      "original": "Tomorrow come to mine at 6 and we can chef up a dinner 👨‍🍳👨‍🍳👨‍🍳",
+      "suggestion": "Let me know when you’re free, we can plan something chill.",
+      "reason": "Too sudden of an invitation might feel like pressure."
+    }
+  ]
+}

@@ -19,7 +19,7 @@ export const MessageSchema = z.object({
   id: z.string(),
   speaker: z.enum(["you", "them", "unknown"]),
   text: z.string(),
-  timestamp: z.string().optional(),
+  timestamp: z.string().nullable(),
   isUser: z.boolean(),
 });
 export type Message = z.infer<typeof MessageSchema>;
@@ -31,7 +31,7 @@ export const MessageReviewSchema = z.object({
   evalDelta: z.number(),
   evalAfter: z.number(),
   explanation: z.string(),
-  suggestedReply: z.string().optional(),
+  suggestedReply: z.string().nullable(),
 });
 export type MessageReview = z.infer<typeof MessageReviewSchema>;
 
@@ -79,7 +79,7 @@ export const GameReviewSchema = z.object({
     z.object({
       moveNumber: z.number(),
       eval: z.number(),
-      label: MoveLabelEnum.optional(),
+      label: MoveLabelEnum.nullable(),
     })
   ),
   messageReviews: z.array(MessageReviewSchema),
@@ -89,5 +89,6 @@ export const GameReviewSchema = z.object({
     them: LabelCountsSchema,
   }),
   suggestedReplies: z.array(SuggestedReplySchema),
+  suggestedNextMove: z.string().nullable(),
 });
 export type GameReview = z.infer<typeof GameReviewSchema>;

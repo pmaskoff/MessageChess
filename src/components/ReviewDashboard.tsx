@@ -81,10 +81,14 @@ export default function ReviewDashboard({ review, onReset }: Props) {
                             {review.messages && review.messages.map((m) => {
                                 const isYou = m.speaker === "you";
                                 const isHighlighted = currentMove?.messageId === m.id;
+                                const moveIndex = review.messageReviews.findIndex(r => r.messageId === m.id);
+                                const isClickable = moveIndex !== -1;
+
                                 return (
                                     <div key={m.id} className={`flex ${isYou ? "justify-end" : "justify-start"}`}>
                                         <div
-                                            className={`max-w-[85%] p-3 rounded-2xl relative transition-all duration-300 ${isYou ? "rounded-tr-sm" : "rounded-tl-sm"} ${isHighlighted
+                                            onClick={() => { if (isClickable) setSelectedMoveIndex(moveIndex); }}
+                                            className={`max-w-[85%] p-3 rounded-2xl relative transition-all duration-300 ${isClickable ? "cursor-pointer" : ""} ${isYou ? "rounded-tr-sm" : "rounded-tl-sm"} ${isHighlighted
                                                 ? "ring-2 ring-emerald-500 shadow-[0_0_15px_rgba(16,185,129,0.5)] z-10 scale-[1.02]"
                                                 : "opacity-60 hover:opacity-100"
                                                 } ${isYou
@@ -136,6 +140,20 @@ export default function ReviewDashboard({ review, onReset }: Props) {
                             </div>
                         </CardContent>
                     </Card>
+
+                    {review.suggestedNextMove && (
+                        <Card className="bg-emerald-950/20 border-emerald-900/50 mb-4 relative z-20">
+                            <CardHeader className="py-3 px-4 bg-emerald-900/10 border-b border-emerald-900/20">
+                                <CardTitle className="text-sm text-emerald-400 flex items-center gap-2">
+                                    <MessageSquare className="w-4 h-4" />
+                                    Coach's Suggested Next Move
+                                </CardTitle>
+                            </CardHeader>
+                            <CardContent className="p-4 text-emerald-100 font-medium">
+                                "{review.suggestedNextMove}"
+                            </CardContent>
+                        </Card>
+                    )}
 
                     <div className="grid grid-cols-2 gap-4 relative z-20">
                         <PlayerCard

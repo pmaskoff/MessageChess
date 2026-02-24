@@ -53,7 +53,8 @@ You must calculate:
 - Give each message a moveNumber and evaluation delta.
 - Provide up to 3 critical moments.
 - Provide labelCounts for each player matching exactly the number of labels assigned in messageReviews.
-- Provide suggestedReplies for 'you' when there's an inaccuracy/mistake/blunder.`;
+- Provide suggestedReplies for 'you' when there's an inaccuracy/mistake/blunder.
+- Provide a "suggestedNextMove" describing what you should text them next.`;
 
         const response = await this.openai.chat.completions.create({
             model: "gpt-4o",
@@ -113,9 +114,17 @@ CRITICAL: Do NEVER mention being an AI, NPC, or part of a game. If the user is s
 
     async puzzleReview(runId: string, personaId: string, fullHistory: Message[]): Promise<GameReview> {
         const prompt = `You are a chess.com style Game Review coach for text messages.
-Review this completed conversation practice run. Generate a complete Game Review identifying mistakes, blunders, and brilliant moves.`;
+Review this completed conversation practice run. Generate a complete Game Review identifying mistakes, blunders, and brilliant moves.
+CRITICAL INSTRUCTIONS:
+- You are provided a History of messages with their exact IDs.
+- For EVERY message in the history, you must evaluate it.
+- In "messageReviews", the "messageId" MUST exactly match the ID provided in the History.
+- Calculate an evaluation score ("evalSeries") for each move (message). "moveNumber" should start at 1.
+- Provide labelCounts for each player matching exactly the number of labels assigned in messageReviews.
+- Provide a "suggestedNextMove" describing what you should text them next.
+- Ensure "evalSeries" length matches the number of messages.`;
 
-        const historyText = fullHistory.map(m => `${m.speaker}: ${m.text}`).join("\n");
+        const historyText = fullHistory.map(m => `[ID: ${m.id}] ${m.speaker}: ${m.text}`).join("\n");
 
         const response = await this.openai.chat.completions.create({
             model: "gpt-4o",

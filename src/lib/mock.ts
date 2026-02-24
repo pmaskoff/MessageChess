@@ -4,12 +4,12 @@ export const mockGameReview: GameReview = {
     id: "demo-mock-id",
     createdAt: new Date().toISOString(),
     messages: [
-        { id: "msg-0", speaker: "them", text: "Hey! Still on for tonight?", isUser: false },
-        { id: "msg-1", speaker: "you", text: "Hey yeah, looking forward to it!", isUser: true },
-        { id: "msg-them-1", speaker: "them", text: "Awesome! Where should we meet?", isUser: false },
-        { id: "msg-2", speaker: "you", text: "k", isUser: true },
-        { id: "msg-them-2", speaker: "them", text: "...okay then. Nevermind.", isUser: false },
-        { id: "msg-3", speaker: "you", text: "Wait no I'm sorry, my cat stepped on my phone and I panicked. I know a great sushi spot downtown, my treat! 🍣", isUser: true },
+        { id: "msg-0", speaker: "them", text: "Hey! Still on for tonight?", timestamp: null, isUser: false },
+        { id: "msg-1", speaker: "you", text: "Hey yeah, looking forward to it!", timestamp: null, isUser: true },
+        { id: "msg-them-1", speaker: "them", text: "Awesome! Where should we meet?", timestamp: null, isUser: false },
+        { id: "msg-2", speaker: "you", text: "k", timestamp: null, isUser: true },
+        { id: "msg-them-2", speaker: "them", text: "...okay then. Nevermind.", timestamp: null, isUser: false },
+        { id: "msg-3", speaker: "you", text: "Wait no I'm sorry, my cat stepped on my phone and I panicked. I know a great sushi spot downtown, my treat! 🍣", timestamp: null, isUser: true },
     ],
     players: {
         you: { name: "You", accuracy: 78 },
@@ -18,10 +18,10 @@ export const mockGameReview: GameReview = {
     openingName: "Dry Texter Defense",
     overallCoachSummary: "You survived the early game, but giving a one-word answer nearly threw away your advantage. Good recovery in the endgame.",
     evalSeries: [
-        { moveNumber: 0, eval: +0.20 },
-        { moveNumber: 1, eval: +0.25 },
+        { moveNumber: 0, eval: +0.20, label: null },
+        { moveNumber: 1, eval: +0.25, label: null },
         { moveNumber: 2, eval: -1.05, label: "blunder" },
-        { moveNumber: 3, eval: -0.80 },
+        { moveNumber: 3, eval: -0.80, label: null },
         { moveNumber: 4, eval: +1.50, label: "brilliant move" },
     ],
     messageReviews: [
@@ -32,6 +32,7 @@ export const mockGameReview: GameReview = {
             evalDelta: 0.05,
             evalAfter: 0.25,
             explanation: "Standard greeting. Nothing flashy, but solid.",
+            suggestedReply: null,
         },
         {
             messageId: "msg-2",
@@ -49,6 +50,7 @@ export const mockGameReview: GameReview = {
             evalDelta: +2.30,
             evalAfter: +1.50,
             explanation: "A deeply considered meme response that changed the entire conversation dynamic.",
+            suggestedReply: null,
         },
     ],
     criticalMoments: [
@@ -101,5 +103,6 @@ export const mockGameReview: GameReview = {
             suggestion: "Sure! What time works for you?",
             reason: "It opens up the conversation and asks for their input."
         }
-    ]
+    ],
+    suggestedNextMove: "Sounds great! Let's do 7pm?",
 };
