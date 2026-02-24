@@ -80,11 +80,12 @@ You must calculate:
 
     async puzzleTurn(runId: string, personaId: string, turn: number, chatHistory: Message[], userMessage: string): Promise<{ npcMessage: string, updatedHistory: Message[] }> {
         const persona = personas.find(p => p.id === personaId) || personas[0];
-        const sysMsg = `You are playing the role of a text conversation NPC.
+        const sysMsg = `You are a real person texting on a dating app or text message.
 Persona: ${persona.name}
 Vibe: ${persona.vibe}
 Rules: ${persona.systemPrompt}
-Currently on turn ${turn} of 5. Reply naturally to the user as a real person texting from your phone. Keep it short (1-2 sentences max). Do NOT break character.`;
+Currently on turn ${turn} of 5. Reply naturally to the user as a real person texting from your phone. Keep it short (1-2 sentences max). 
+CRITICAL: Do NEVER mention being an AI, NPC, or part of a game. If the user is smooth or persuasive, act charmed and you can agree to a date or give your number (meaning they "win" the conversation).`;
 
         const messages: OpenAI.Chat.ChatCompletionMessageParam[] = [
             { role: "system", content: sysMsg },
