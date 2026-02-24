@@ -1,0 +1,381 @@
+{
+  "id": "game_review",
+  "createdAt": "2023-10-06T18:33:12.000Z",
+  "messages": [
+    {
+      "id": "1",
+      "speaker": "them",
+      "text": "Good",
+      "timestamp": null,
+      "isUser": false
+    },
+    {
+      "id": "2",
+      "speaker": "you",
+      "text": "fuc my knees hurt like a bitch",
+      "timestamp": null,
+      "isUser": true
+    },
+    {
+      "id": "3",
+      "speaker": "you",
+      "text": "advil clutch",
+      "timestamp": null,
+      "isUser": true
+    },
+    {
+      "id": "4",
+      "speaker": "you",
+      "text": "I’ve literally been doing the same assignment for the last 4 hours",
+      "timestamp": null,
+      "isUser": true
+    },
+    {
+      "id": "5",
+      "speaker": "you",
+      "text": "im gonna kill myself",
+      "timestamp": null,
+      "isUser": true
+    },
+    {
+      "id": "6",
+      "speaker": "them",
+      "text": "Ya I’ll join u I’ve been doing the dumbest assignment for way too long",
+      "timestamp": null,
+      "isUser": false
+    },
+    {
+      "id": "7",
+      "speaker": "them",
+      "text": "Ugh I’m still doing mine",
+      "timestamp": null,
+      "isUser": false
+    },
+    {
+      "id": "8",
+      "speaker": "you",
+      "text": "Submitted that bih",
+      "timestamp": null,
+      "isUser": true
+    },
+    {
+      "id": "9",
+      "speaker": "you",
+      "text": "You should come over once you’re done and dj",
+      "timestamp": null,
+      "isUser": true
+    },
+    {
+      "id": "10",
+      "speaker": "you",
+      "text": "Lock in",
+      "timestamp": null,
+      "isUser": true
+    },
+    {
+      "id": "11",
+      "speaker": "them",
+      "text": "Ahh sorry wait I’m just seeing this\nI fell asleep",
+      "timestamp": null,
+      "isUser": false
+    },
+    {
+      "id": "12",
+      "speaker": "you",
+      "text": "All good",
+      "timestamp": null,
+      "isUser": true
+    },
+    {
+      "id": "13",
+      "speaker": "you",
+      "text": "You just missed a Mau P level set in the kitchen",
+      "timestamp": null,
+      "isUser": true
+    },
+    {
+      "id": "14",
+      "speaker": "them",
+      "text": "🎤",
+      "timestamp": null,
+      "isUser": false
+    },
+    {
+      "id": "15",
+      "speaker": "them",
+      "text": "I’m emo",
+      "timestamp": null,
+      "isUser": false
+    }
+  ],
+  "players": {
+    "you": {
+      "name": "You",
+      "accuracy": 82
+    },
+    "them": {
+      "name": "Them",
+      "accuracy": 78
+    }
+  },
+  "openingName": "Knee Pain Gambit",
+  "overallCoachSummary": "This conversation was a delightful jumble of life complaints and casual invitations. You both opened with the \"Knee Pain Gambit,\" but it quickly devolved into the \"Late Night Assignment Grind\" and \"DJ Invitation Attack.\" Despite some minor inaccuracies, your humorous and understanding tone kept the exchange light. Keep the vibe upbeat but maybe offer more concrete plans next time.",
+  "evalSeries": [
+    {
+      "moveNumber": 1,
+      "eval": 0.5,
+      "label": "book move"
+    },
+    {
+      "moveNumber": 2,
+      "eval": 0,
+      "label": "good move"
+    },
+    {
+      "moveNumber": 3,
+      "eval": 0.5,
+      "label": "book move"
+    },
+    {
+      "moveNumber": 4,
+      "eval": 1,
+      "label": "excellent move"
+    },
+    {
+      "moveNumber": 5,
+      "eval": 0,
+      "label": "inaccuracy"
+    },
+    {
+      "moveNumber": 6,
+      "eval": 1.5,
+      "label": "excellent move"
+    },
+    {
+      "moveNumber": 7,
+      "eval": 1,
+      "label": "good move"
+    },
+    {
+      "moveNumber": 8,
+      "eval": 0.5,
+      "label": "great move"
+    },
+    {
+      "moveNumber": 9,
+      "eval": 0.5,
+      "label": "best move"
+    },
+    {
+      "moveNumber": 10,
+      "eval": 0.5,
+      "label": "good move"
+    },
+    {
+      "moveNumber": 11,
+      "eval": 0,
+      "label": "good move"
+    },
+    {
+      "moveNumber": 12,
+      "eval": 0.5,
+      "label": "great move"
+    },
+    {
+      "moveNumber": 13,
+      "eval": 1,
+      "label": "great move"
+    },
+    {
+      "moveNumber": 14,
+      "eval": 0.5,
+      "label": "good move"
+    },
+    {
+      "moveNumber": 15,
+      "eval": 0,
+      "label": "good move"
+    }
+  ],
+  "messageReviews": [
+    {
+      "messageId": "1",
+      "moveNumber": 1,
+      "label": "book move",
+      "evalDelta": 0.5,
+      "evalAfter": 0.5,
+      "explanation": "Starts the conversation on a generic note.",
+      "suggestedReply": null
+    },
+    {
+      "messageId": "2",
+      "moveNumber": 2,
+      "label": "good move",
+      "evalDelta": 0.5,
+      "evalAfter": 0,
+      "explanation": "Sharing personal discomfort unlocks empathy.",
+      "suggestedReply": null
+    },
+    {
+      "messageId": "3",
+      "moveNumber": 3,
+      "label": "book move",
+      "evalDelta": 0.5,
+      "evalAfter": 0.5,
+      "explanation": "Advil is a universally recognized solution.",
+      "suggestedReply": null
+    },
+    {
+      "messageId": "4",
+      "moveNumber": 4,
+      "label": "excellent move",
+      "evalDelta": 0.5,
+      "evalAfter": 1,
+      "explanation": "Expressing struggles builds rapport.",
+      "suggestedReply": null
+    },
+    {
+      "messageId": "5",
+      "moveNumber": 5,
+      "label": "inaccuracy",
+      "evalDelta": 1,
+      "evalAfter": 0,
+      "explanation": "Casual mention of self-harm isn't ideal; be cautious about language.",
+      "suggestedReply": "This assignment is driving me up the wall!"
+    },
+    {
+      "messageId": "6",
+      "moveNumber": 6,
+      "label": "excellent move",
+      "evalDelta": 0.5,
+      "evalAfter": 1.5,
+      "explanation": "Joining in solidarity strengthens connection.",
+      "suggestedReply": null
+    },
+    {
+      "messageId": "7",
+      "moveNumber": 7,
+      "label": "good move",
+      "evalDelta": 0.5,
+      "evalAfter": 1,
+      "explanation": "Continues to share the burdens of assignment woes.",
+      "suggestedReply": null
+    },
+    {
+      "messageId": "8",
+      "moveNumber": 8,
+      "label": "great move",
+      "evalDelta": 0.5,
+      "evalAfter": 0.5,
+      "explanation": "Finishing an assignment is a brag-worthy moment.",
+      "suggestedReply": null
+    },
+    {
+      "messageId": "9",
+      "moveNumber": 9,
+      "label": "best move",
+      "evalDelta": 0.5,
+      "evalAfter": 0.5,
+      "explanation": "Inviting them over can turn the mood positive.",
+      "suggestedReply": null
+    },
+    {
+      "messageId": "10",
+      "moveNumber": 10,
+      "label": "good move",
+      "evalDelta": 0.5,
+      "evalAfter": 0.5,
+      "explanation": "Encouraging them to focus is supportive.",
+      "suggestedReply": null
+    },
+    {
+      "messageId": "11",
+      "moveNumber": 11,
+      "label": "good move",
+      "evalDelta": 0.5,
+      "evalAfter": 0,
+      "explanation": "Explaining the situation with honesty.",
+      "suggestedReply": null
+    },
+    {
+      "messageId": "12",
+      "moveNumber": 12,
+      "label": "great move",
+      "evalDelta": 0.5,
+      "evalAfter": 0.5,
+      "explanation": "Being understanding and easy-going.",
+      "suggestedReply": null
+    },
+    {
+      "messageId": "13",
+      "moveNumber": 13,
+      "label": "great move",
+      "evalDelta": 0.5,
+      "evalAfter": 1,
+      "explanation": "Adding a playful touch with the DJ reference.",
+      "suggestedReply": null
+    },
+    {
+      "messageId": "14",
+      "moveNumber": 14,
+      "label": "good move",
+      "evalDelta": 0.5,
+      "evalAfter": 0.5,
+      "explanation": "Emoji responses can convey shared feelings.",
+      "suggestedReply": null
+    },
+    {
+      "messageId": "15",
+      "moveNumber": 15,
+      "label": "good move",
+      "evalDelta": 0.5,
+      "evalAfter": 0,
+      "explanation": "Expressing emotion keeps the door open for follow-up.",
+      "suggestedReply": null
+    }
+  ],
+  "criticalMoments": [
+    {
+      "moveNumber": 5,
+      "messageId": "5",
+      "label": "inaccuracy",
+      "headline": "Inaccuracy in Language Choice",
+      "explanation": "Expressing extreme frustration can be better handled without alarming language. It's more strategic to communicate frustration lightly.",
+      "betterLine": "This assignment is driving me up the wall!"
+    }
+  ],
+  "labelCounts": {
+    "you": {
+      "book move": 2,
+      "good move": 4,
+      "great move": 3,
+      "excellent move": 1,
+      "best move": 1,
+      "brilliant move": 0,
+      "inaccuracy": 1,
+      "mistake": 0,
+      "blunder": 0
+    },
+    "them": {
+      "book move": 0,
+      "good move": 5,
+      "great move": 0,
+      "excellent move": 1,
+      "best move": 0,
+      "brilliant move": 0,
+      "inaccuracy": 0,
+      "mistake": 0,
+      "blunder": 0
+    }
+  },
+  "suggestedReplies": [
+    {
+      "messageId": "5",
+      "moveNumber": 5,
+      "original": "im gonna kill myself",
+      "suggestion": "This assignment is driving me up the wall!",
+      "reason": "Using less extreme language maintains a positive tone."
+    }
+  ],
+  "suggestedNextMove": "Suggest a specific time to hang out and celebrate getting the assignments done."
+}

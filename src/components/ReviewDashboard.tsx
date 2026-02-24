@@ -72,7 +72,7 @@ export default function ReviewDashboard({ review, onReset }: Props) {
         <div className="container mx-auto max-w-[100rem] px-4 py-8 flex flex-col lg:flex-row gap-6 h-full min-h-[calc(100vh-4rem)]">
             {/* Left Column: Original Chat */}
             <div className="w-full lg:w-96 flex flex-col gap-4">
-                <Card className="bg-zinc-900 border-zinc-800 flex-1 flex flex-col overflow-hidden max-h-[800px]">
+                <Card className="bg-zinc-900 border-zinc-800 flex-1 flex flex-col overflow-hidden h-[calc(100vh-8rem)]">
                     <CardHeader className="border-b border-zinc-800 py-4 bg-zinc-950/50">
                         <CardTitle className="text-lg">Original Chat</CardTitle>
                     </CardHeader>
@@ -146,7 +146,7 @@ export default function ReviewDashboard({ review, onReset }: Props) {
                             <CardHeader className="py-3 px-4 bg-emerald-900/10 border-b border-emerald-900/20">
                                 <CardTitle className="text-sm text-emerald-400 flex items-center gap-2">
                                     <MessageSquare className="w-4 h-4" />
-                                    Coach's Suggested Next Move
+                                    Coach D. Dennis' Suggested Next Move
                                 </CardTitle>
                             </CardHeader>
                             <CardContent className="p-4 text-emerald-100 font-medium">
@@ -202,7 +202,7 @@ export default function ReviewDashboard({ review, onReset }: Props) {
 
             {/* Right Column: Move List & Details */}
             <div className="w-full lg:w-96 flex flex-col gap-4">
-                <Card className="bg-zinc-900 border-zinc-800 flex-1 flex flex-col overflow-hidden max-h-[800px]">
+                <Card className="bg-zinc-900 border-zinc-800 flex-1 flex flex-col overflow-hidden h-[calc(100vh-8rem)]">
                     <CardHeader className="border-b border-zinc-800 py-4">
                         <CardTitle className="text-lg flex items-center justify-between">
                             Move Analysis

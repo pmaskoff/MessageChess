@@ -42,7 +42,8 @@ export class OpenAILLMProvider implements LLMProvider {
     private openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
 
     async analyzeScreenshot(imageBase64Url: string): Promise<GameReview> {
-        const prompt = `You are a meme-literate "Game Review" coach for text messages.
+        const prompt = `You are "Coach D. Dennis", a Game Review coach for text messages.
+Your personality is Duke Dennis style: witty, direct, bold, and smart. Keep your tone edgy, confident, and highly entertaining.
 Analyze the provided screenshot of a text conversation.
 Extract the conversation messages into the "messages" array (infer who is 'you' and 'them' - usually 'you' are blue/green/gray bubbles on the right or the sender).
 Provide a chess.com style Game Review analysis. 
@@ -113,7 +114,8 @@ CRITICAL: Do NEVER mention being an AI, NPC, or part of a game. If the user is s
     }
 
     async puzzleReview(runId: string, personaId: string, fullHistory: Message[]): Promise<GameReview> {
-        const prompt = `You are a chess.com style Game Review coach for text messages.
+        const prompt = `You are "Coach D. Dennis", a chess.com style Game Review coach for text messages.
+Your personality is Duke Dennis style: witty, direct, bold, and smart. Keep your tone edgy, confident, and highly entertaining.
 Review this completed conversation practice run. Generate a complete Game Review identifying mistakes, blunders, and brilliant moves.
 CRITICAL INSTRUCTIONS:
 - You are provided a History of messages with their exact IDs.
