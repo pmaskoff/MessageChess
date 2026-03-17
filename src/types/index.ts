@@ -10,10 +10,29 @@ export const moveLabels = [
   "inaccuracy",
   "mistake",
   "blunder",
+  "gambit",
+  "miss",
+  "forced",
 ] as const;
 
 export const MoveLabelEnum = z.enum(moveLabels);
 export type MoveLabel = z.infer<typeof MoveLabelEnum>;
+
+export const conversationContexts = [
+  "career",
+  "networking",
+  "dating",
+  "friends-family",
+  "negotiation",
+] as const;
+
+export const ConversationContextEnum = z.enum(conversationContexts);
+export type ConversationContext = z.infer<typeof ConversationContextEnum>;
+
+export const NextMoveStyleEnum = z.enum(["safe", "balanced", "bold"]);
+export type NextMoveStyle = z.infer<typeof NextMoveStyleEnum>;
+export const TonePreferenceEnum = z.enum(["neutral", "warmer", "direct", "playful"]);
+export type TonePreference = z.infer<typeof TonePreferenceEnum>;
 
 export const MessageSchema = z.object({
   id: z.string(),
@@ -55,6 +74,9 @@ export const LabelCountsSchema = z.object({
   "inaccuracy": z.number(),
   "mistake": z.number(),
   "blunder": z.number(),
+  "gambit": z.number(),
+  "miss": z.number(),
+  "forced": z.number(),
 });
 
 export const SuggestedReplySchema = z.object({
@@ -65,9 +87,35 @@ export const SuggestedReplySchema = z.object({
   reason: z.string(),
 });
 
+export const NextMoveOptionSchema = z.object({
+  style: NextMoveStyleEnum,
+  label: z.string(),
+  message: z.string(),
+  rationale: z.string(),
+  risk: z.string(),
+});
+export type NextMoveOption = z.infer<typeof NextMoveOptionSchema>;
+
+export const NextMoveResponseSchema = z.object({
+  context: ConversationContextEnum,
+  tone: TonePreferenceEnum,
+  overallAdvice: z.string(),
+  options: z.array(NextMoveOptionSchema).length(3),
+});
+export type NextMoveResponse = z.infer<typeof NextMoveResponseSchema>;
+
+export const RefinedReplyResponseSchema = z.object({
+  context: ConversationContextEnum,
+  tone: TonePreferenceEnum,
+  message: z.string(),
+  rationale: z.string(),
+});
+export type RefinedReplyResponse = z.infer<typeof RefinedReplyResponseSchema>;
+
 export const GameReviewSchema = z.object({
   id: z.string(),
   createdAt: z.string(), // ISO string usually
+  context: ConversationContextEnum,
   messages: z.array(MessageSchema),
   players: z.object({
     you: z.object({ name: z.string(), accuracy: z.number() }),
@@ -75,6 +123,8 @@ export const GameReviewSchema = z.object({
   }),
   openingName: z.string(),
   overallCoachSummary: z.string(),
+  estimatedElo: z.number(),
+  success: z.boolean(),
   evalSeries: z.array(
     z.object({
       moveNumber: z.number(),

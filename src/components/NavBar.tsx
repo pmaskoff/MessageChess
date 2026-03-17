@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
-import { LogOut, Image as ImageIcon, MessageCircle } from "lucide-react";
+import { LogOut, Image as ImageIcon, MessageCircle, UserRound, WandSparkles } from "lucide-react";
 import { toast } from "sonner";
 
 export default function NavBar() {
@@ -18,7 +18,7 @@ export default function NavBar() {
             router.push("/login");
             router.refresh();
             toast.success("Logged out successfully");
-        } catch (e) {
+        } catch {
             toast.error("Logout failed");
         }
     };
@@ -43,12 +43,28 @@ export default function NavBar() {
                             <span>Review</span>
                         </Link>
                         <Link
+                            href="/next-move"
+                            className={`flex items-center space-x-2 transition-colors hover:text-emerald-400 ${pathname.startsWith("/next-move") ? "text-emerald-400" : "text-zinc-400"
+                                }`}
+                        >
+                            <WandSparkles className="w-4 h-4" />
+                            <span>Next Move</span>
+                        </Link>
+                        <Link
                             href="/puzzles"
                             className={`flex items-center space-x-2 transition-colors hover:text-emerald-400 ${pathname.startsWith("/puzzles") ? "text-emerald-400" : "text-zinc-400"
                                 }`}
                         >
                             <MessageCircle className="w-4 h-4" />
                             <span>Puzzles</span>
+                        </Link>
+                        <Link
+                            href="/profile"
+                            className={`flex items-center space-x-2 transition-colors hover:text-emerald-400 ${pathname.startsWith("/profile") ? "text-emerald-400" : "text-zinc-400"
+                                }`}
+                        >
+                            <UserRound className="w-4 h-4" />
+                            <span>Profile</span>
                         </Link>
                     </nav>
                 </div>

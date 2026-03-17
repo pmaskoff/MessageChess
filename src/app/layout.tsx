@@ -7,8 +7,14 @@ import NavBar from "@/components/NavBar";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Message Chess",
-  description: "Get your text messages analyzed with a chess.com-style Game Review.",
+  title: "Message Chess | Review Important Conversations",
+  description:
+    "Chess-style reviews for important conversations. Upload a screenshot, study the critical moments, and plan your next move.",
+  icons: {
+    icon: "/icon.svg",
+    shortcut: "/icon.svg",
+    apple: "/icon.svg",
+  },
 };
 
 export default function RootLayout({

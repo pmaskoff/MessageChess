@@ -32,7 +32,7 @@ export default function LoginPage() {
                 const data = await res.json();
                 toast.error(data.error || "Login failed");
             }
-        } catch (err) {
+        } catch {
             toast.error("An error occurred");
         } finally {
             setLoading(false);
@@ -48,7 +48,7 @@ export default function LoginPage() {
                             Message Chess
                         </CardTitle>
                         <CardDescription className="text-zinc-400">
-                            Enter the beta password to access the app.
+                            Enter the beta password to review important conversations like raises, coffee chats, favors, follow-ups, and dates.
                         </CardDescription>
                     </CardHeader>
                     <CardContent className="space-y-4">

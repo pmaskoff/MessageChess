@@ -3,14 +3,14 @@ import { getLLMProvider } from "@/lib/llmProvider";
 
 export async function POST(request: Request) {
     try {
-        const { runId, personaId, turn, chatHistory, userMessage } = await request.json();
+        const { runId, scenarioId, turn, chatHistory, userMessage } = await request.json();
 
-        if (!runId || !personaId || turn === undefined || !userMessage) {
+        if (!runId || !scenarioId || turn === undefined || !userMessage) {
             return NextResponse.json({ error: "Missing required fields" }, { status: 400 });
         }
 
         const llm = getLLMProvider();
-        const result = await llm.puzzleTurn(runId, personaId, turn, chatHistory, userMessage);
+        const result = await llm.puzzleTurn(runId, scenarioId, turn, chatHistory, userMessage);
 
         return NextResponse.json(result);
     } catch (error: unknown) {
